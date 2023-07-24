@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    height: 100vh;
+    color: #333;
+}
+
+.mist {
+    filter: blur(0.5rem);
+    /* background: linear-gradient(to top left, rgba(0,0,0,0.4), rgba(0,0,0,0.4)); */
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.modal_text {
+    width: 1500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10rem;
+    padding: 5rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(0.5);
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+h2 {
+    font-size: 6rem;
+    font-style: bold;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.modal_text p {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 128px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+.close:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
